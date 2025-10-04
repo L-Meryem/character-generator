@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A mini version of a role playing game character sheet based on 5e">
+	<meta name="keywords" content="wizard, fighter, thief, sheet, character">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Character Sheet</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<main>
+		<h1> Pick a class, give your character a name and click on the button to generate your stats</h1>
+		<form>
+			<button type="submit" name="submit">Generate Character</button>
+			<fieldset class="info">
+				<input type="text" id="name" placeholder="Character Name">
+				<select name="char-class" id="char-class">
+					<option value="barbarian">Fighter</option>
+					<option value="wizard">Wizard</option>
+					<option value="rogue">Thief</option>
+				</select>
+				<div class='form-group'>
+					<label for="xp">XP</label>
+					<input type="text" id="xp" placeholder="0">
+				</div>
+				<div class='form-group'>
+					<label for="level">LVL</label>
+					<input type="text" id="level" placeholder="1">
+				</div>
+
+			</fieldset>
+
+			<fieldset class="stats">
+				<div class='form-group'>
+					<label for="hp">HP</label>
+					<input type="text" id="hp">
+				</div>
+				<div class='form-group'>
+					<label for="ac">AC</label>
+					<input type="text" id="ac">
+				</div>
+				<div class='form-group'>
+					<label for="hd">Hit dice</label>
+					<input type="text" id="hd">
+				</div>			
+			</fieldset>
+
+			<div class ="main-group">
+				<fieldset class="abilities">
+				<label for="str">Strength</label>
+				<div class='form-group'>
+					<input type="text" id="str">
+					<input type="text" id="str-mod">
+				</div>
+				<label for="dex">Dexterity</label>
+				<div class='form-group'>
+					<input type="text" id="dex">
+					<input type="text" id="dex-mod">
+				</div>
+				<label for="con">Constitution</label>
+				<div class='form-group'>
+					<input type="text" id="con">
+					<input type="text" id="con-mod">
+				</div>
+				<label for="int">Intelligence</label>
+				<div class='form-group'>
+					<input type="text" id="int">
+					<input type="text" id="int-mod">
+				</div>
+				<label for="wis">Wisdom</label>
+				<div class='form-group'>
+					<input type="text" id="wis">
+					<input type="text" id="wis-mod">
+				</div>
+				<label for="cha">Charisma</label>
+				<div class='form-group'>
+					<input type="text" id="cha">
+					<input type="text" id="cha-mod">
+				</div>
+			</fieldset>
+			<fieldset class='notes'>
+				<textarea name="weapons" id="weapons" placeholder="Weapon proficiency"></textarea>
+				<textarea name="armors" id="armors" placeholder="Armor proficiency"></textarea>
+				<textarea name="inventory" id="inventory" placeholder="Inventory"></textarea>
+			</fieldset>
+			</div>
+		</form>
+	</main>
+	<!-- defer to wait for the class from select tag -->
+	<script type="text/javascript" src="js/main.js" defer></script>
+</body>
+
+</html>

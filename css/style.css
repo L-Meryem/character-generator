@@ -1,0 +1,220 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+main{
+  width: 80%;
+  max-width: 800px;
+  min-width: 451px;
+  margin: auto;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.info,
+.abilities{
+  border: 2px solid black;
+  box-shadow: 5px 5px black;
+  margin: 20px 0;
+}
+
+.info{
+  display: flex;
+  gap : 10px;
+  padding: 10px 2px;
+}
+
+.info input,
+.info select,
+.info label,
+.abilities *,
+.notes textarea,
+button{
+  font-size: 1.2rem;
+  border-radius: 0;
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+
+.info select{
+  background-color: rgba(62, 95, 201, 0.883);
+  color: white;
+}
+
+.info label{
+  margin-right: 0;
+  border-right: none;
+}
+
+.info .form-group{
+  display: flex;
+  flex-direction: row;
+}
+
+.info select,
+.info #name{
+  flex: 2;
+}
+
+.info #xp,
+.info #level{
+  width: 6rem;
+}
+
+.stats{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats .form-group{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  align-items: center;
+}
+
+.stats input{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px black;
+}
+
+.abilities{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 320px;
+}
+
+.abilities label{
+  font-size: 1.5rem;
+  background-color: rgba(62, 95, 201, 0.883);
+  color: white;
+
+}
+
+.abilities .form-group{
+  border: none;
+}
+
+.abilities .form-group *{
+  height: 8rem;
+  width: 8rem;
+}
+
+.main-group{
+  display: flex;
+  gap: 20px;
+}
+
+.main-group input,
+.stats input{
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-group input + input{
+  background-color: rgba(62, 94, 201, 0.301);
+  border-radius: 50%;
+}
+
+.main-group .notes textarea{
+  width: 100%;
+}
+
+.notes{
+  margin: 20px 0;
+}
+
+.notes textarea{
+  min-width: 344px;
+  max-width: 460px;
+  height: 72ch;
+  box-shadow: 5px 5px black;
+  margin-bottom: 8px;
+}
+
+#weapons,
+#armors{
+  height: 10ch;
+}
+
+button{
+  background-color: rgba(62, 95, 201, 0.883);
+  box-shadow: 5px 5px black;
+  width: 60%;
+  display: block;
+  margin: 5px auto;
+  font-size: 1.6rem;
+  color: white;
+}
+
+button:hover{
+  background-color: white;
+  color:rgba(62, 95, 201, 0.883);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 830px) {
+  main{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main-group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info{
+    flex-direction: column;
+  }
+
+  .abilities{
+    align-self: center;
+  }
+
+}
