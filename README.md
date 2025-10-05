@@ -1,5 +1,5 @@
 ## Description
-A minimalist D&D character sheet that lets you choose a class, roll stats using a dice API, and automatically generate your character with the official 5e rules.
+A minimalist D&D character sheet that lets you choose a class, roll stats using a dice API, and automatically generate your character based on 5e rules.
 
 [Try the Live project!](https://l-meryem.github.io/character-generator/)
 
