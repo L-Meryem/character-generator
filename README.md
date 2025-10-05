@@ -1,22 +1,16 @@
-# 📊 Project: Complex API 
+## Description
+A minimalist D&D character sheet that lets you choose a class, roll stats using a dice API, and automatically generate your character with the official 5e rules.
 
-### Goal: Use data returned from one api to make a request to another api and display the data returned
+[Try the Live project!](https://l-meryem.github.io/character-generator/)
 
-### How to submit your code for review:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<a href="https://l-meryem.github.io/character-generator/" target="_blank" ><img width="1000" alt="Character Sheet" src="https://github.com/user-attachments/assets/c089c5ca-e9d0-442c-8048-3104127f6dbb" />
+</a>
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+
+### Tech used 
+
+ - `HTML`
+ - `CSS`
+ - `JavaScript`
